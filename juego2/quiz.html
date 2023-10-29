@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>OlimpiadasTest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="font-src 'self' chrome-extension://0cd2d4fa-5801-4742-af5f-e145dfaaeff0/static/assets/fonts/">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .link1{
+        text-decoration:none;
+    }
+
+</style>
+<body>
+	<header class="header container animation">
+        <div class="logo">
+            <img src="Logo.png" alt="logo">
+        </div>
+        <nav class="nav">
+            <a href="#" class="link1">Inicio</a>
+            <a href="/juego1/index.html" class="link1">Juegos</a>
+            <a href="#" class="link1">Informacion</a>
+            <a href="#" class="link1">Quienes Somos</a>
+        </nav>
+	</header>
+	<h1 class="h1a animation">Simulacro Olimpiadas</h1>
+	<div class="home-box custom-box">
+		<h3>Responde con la respuesta correcta:</h3>
+		<p>Numero total de preguntas: <span class="total-questions"></span></p>
+		<button type="button" class="btn" onclick="startQuiz()">Comenzar</button>
+	</div>
+	<div class="quiz-box custom-box1 hide">
+		<div class="question-number">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="option-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Siguente</button>
+		</div>
+		<div class="answers-indicator">
+			
+		</div>
+	</div>
+
+	<div class="result-box custom-box1 hide">
+		<h1>Resultados</h1>
+		<table>
+			<tr>
+				<td>Preguntas Totales</td>
+				<td><span class="total-questions"></span></td>
+			</tr>
+			<tr>
+				<td>Intentos</td>
+				<td><span class="total-attempt"></span></td>
+			</tr>
+			<tr>
+				<td>Correctos</td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Errores</td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Porcentaje</td>
+				<td><span class="percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Total de Aciertos</td>
+				<td><span class="total-score"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Reiniciar</button>
+		<button type="button" class="btn" onclick="backToHome()">Volver al Inicio</button>
+	</div>
+
+<script src="js/question.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
